@@ -1,0 +1,1 @@
+n değeri matrix boyutu nxn olarak ele alındığında çıkan sonuç şeklinde girilmeli

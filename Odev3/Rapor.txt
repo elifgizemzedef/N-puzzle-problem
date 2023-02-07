@@ -1,0 +1,39 @@
+• N = Total number of states
+• B = Average number of successors (branching factor)
+• L = Length for start to goal with smallest number of steps
+• Q = Average size of the priority queue
+• Lmax = Length of longest path from START to any state
+
+Time Complexity:
+
+BFS=O(Min(N,B^L)
+DFS=O(Min(N,B^L)
+DFS-Limited=O(B^Lmax)
+Iteratıve=O(B^L)
+Uniform Cost Search= O(log(Q)*B^(C/e)))
+
+
+Space Complexity:
+
+BFS=O(Min(N,B^L))
+DFS=O(Min(B*L)
+DFS-Limited=O(B*Lmax)
+Iteratıve deeping=O(B*L)
+Uniform Cost Search= O(Min(N,B^(C/e)))
+
+Optimality:
+BFS finds optimal solution so it has optimality 
+DFS can find a solution most of the time but it is not always the best so no optimality
+İterative deeping is more like DFS but better finding the solution so no optimality
+Uniform Cost Search works same with dfs because cost = 1
+A* algorithm always finds best solution so it has optimality
+Greedy doesnt has optimality
+
+Completeness:
+BFS= if it is not timeout yes
+DFS=No
+DFS-limited=depends on limit so no 
+iterave deeping=no 
+UCS = if it is not timeout yes
+A*=yes
+Greedy = No 
